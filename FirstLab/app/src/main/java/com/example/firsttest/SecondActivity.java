@@ -37,7 +37,8 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void nextActivity(View view) {
-        Intent intent = new Intent(this, ThirdActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, ThirdActivity.class);
+//        startActivity(intent);
+        onBackPressed();
     }
 }
