@@ -31,14 +31,14 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void prevActivity(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-
+//        Intent intent = new Intent(this, MainActivity.class);
+//        startActivity(intent);
+        onBackPressed();
     }
 
     public void nextActivity(View view) {
-//        Intent intent = new Intent(this, ThirdActivity.class);
-//        startActivity(intent);
-        onBackPressed();
+        Intent intent = new Intent(this, ThirdActivity.class);
+        startActivity(intent);
+
     }
 }
